@@ -103,6 +103,7 @@ void _exit(int code) {
     while(1) {}
 }
 
+// TODO: Move fault handlers to a separate package (they are in no way related to this package).
 
 void HardFault_Handler() {
   __asm volatile(
